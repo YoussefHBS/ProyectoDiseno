@@ -7,17 +7,17 @@
   <link rel="stylesheet" href="boostra/dist/css/bootstrap.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" role="navigation" aria-label="Menú de navegación principal">
     <div class="container">
-      <a class="navbar-brand mx-auto d-lg-none" href="index.html">
-        <img src="img/general/logo.svg" alt="Logo de Sport Fast">
+      <a class="navbar-brand mx-auto d-lg-none" href="index.html" alt="Logo de Sport Fast">
+        <img src="img/general/logo.svg" alt="Logo de Sport Fast" />
       </a>
   
       <button class="navbar-toggler btn btn-outline-primary mt-4 mb-4" onclick="toggleSidebar()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Abrir barra de navegación">
         <span class="navbar-toggler-icon"></span>
       </button>
   
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav" id="pepe">
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="nav">
           <li class="btn btn-outline-primary fs-5 mx-2">
             <a href="mujer.html" class="nav-link fs-4" role="link" aria-label="Ir a ropa de mujer">Mujer</a>
@@ -57,7 +57,7 @@
           <li>Boots</li>
         </ul>
         <p class=" text-opacity-90 fs-4">544,90 €</p>
-        <button class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#productModal">Comprar</button>
+        <button class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#productModal" aria-label="Comprar Juego de Snowboard">Comprar</button>
       </div>
       <div class="col-md-4 text-center">
         <img src="img/hombre/tenista.svg" alt="Conjunto de ropa para hombres, incluye camiseta con 4 colores, pantalón blanco y negro, gorra blanca" class="img-fluid mb-3" />
@@ -68,7 +68,7 @@
           <li>Gorra Blanca</li>
         </ul>
         <p class=" text-opacity-90 fs-4">99,99 €</p>
-        <button class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#productModal">Comprar</button>
+        <button class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#productModal" aria-label="Comprar Conjunto de Ropa para Hombre">Comprar</button>
       </div>
       <div class="col-md-4 text-center">
         <img src="img/hombre/rugby.svg" alt="Conjunto de ropa de fútbol americano, incluye pantalón blanco, camiseta azul, casco azul y blanco" class="img-fluid mb-3" />
@@ -79,7 +79,7 @@
           <li>Casco: color azul y blanco</li>
         </ul>
         <p class=" text-opacity-90 fs-4">199,99 €</p>
-        <button class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#productModal">Comprar</button>
+        <button class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#productModal" aria-label="Comprar Conjunto de Fútbol Americano">Comprar</button>
       </div>
     </div>
 
@@ -93,7 +93,7 @@
           <li>Mascara de esgrima</li>
         </ul>
         <p class=" text-opacity-90 fs-4">244,90 €</p>
-        <button class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#productModal">Comprar</button>
+        <button class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#productModal" aria-label="Comprar Juego de Esgrima para Hombre">Comprar</button>
       </div>
       <div class="col-md-4 text-center">
         <img src="img/hombre/cricket.svg" alt="Conjunto de ropa de cricket, incluye jersey blanco, guantes y pantalón blanco" class="img-fluid mb-3" />
@@ -104,7 +104,7 @@
           <li>Pantalón Largo: Color Blanco</li>
         </ul>
         <p class=" text-opacity-90 fs-4">108,99 €</p>
-        <button class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#productModal">Comprar</button>
+        <button class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#productModal" aria-label="Comprar Conjunto de Cricket">Comprar</button>
       </div>
 
       <div class="col-md-4 text-center">
@@ -116,12 +116,13 @@
           <li>Pantalón Largo: Color Blanco</li>
         </ul>
         <p class=" text-opacity-90 fs-4">108,99 €</p>
-        <button class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#productModal">Comprar</button>
+        <button class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#productModal" aria-label="Comprar Conjunto de Baloncesto">Comprar</button>
       </div>
     </div>
   </main>
 
-  <div class="modal fade" id="productModal"  aria-labelledby="productModalLabel" aria-hidden="true">
+  <!-- Modal para detalles del producto -->
+  <div class="modal fade" id="productModal" aria-labelledby="productModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -130,7 +131,7 @@
         </div>
         <div class="modal-body">
           <h4>Nombre Producto: ......</h4>
-          <p class="fs-5 fw-bold">Descripcion: ......</p>
+          <p class="fs-5 fw-bold">Descripción: ......</p>
           <p class="fs-5 fw-bold">Precio: ....€</p>
         </div>
         <div class="modal-footer">
@@ -141,6 +142,7 @@
     </div>
   </div>
 
+  <!-- Modal de login -->
   <div class="modal fade" id="loginModal" aria-labelledby="loginModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -152,47 +154,48 @@
           <form>
             <div class="mb-3">
               <label for="loginEmail" class="form-label">Correo Electrónico</label>
-              <input type="email" class="form-control" id="loginEmail" placeholder="Introduce tu correo">
+              <input type="email" class="form-control" id="loginEmail" placeholder="Introduce tu correo" aria-label="Correo electrónico de inicio de sesión">
             </div>
             <div class="mb-3">
               <label for="loginPassword" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="loginPassword" placeholder="Introduce tu contraseña">
+              <input type="password" class="form-control" id="loginPassword" placeholder="Introduce tu contraseña" aria-label="Contraseña de inicio de sesión">
             </div>
-            <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
+            <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
           </form>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Modal de registro -->
   <div class="modal fade" id="registerModal" aria-labelledby="registerModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="registerModalLabel">Registrarse en Sport Fast</h5>
+          <h5 class="modal-title" id="registerModalLabel">Registro en Sport Fast</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar el modal de registro"></button>
         </div>
         <div class="modal-body">
           <form>
             <div class="mb-3">
-              <label for="registerName" class="form-label">Nombre Completo</label>
-              <input type="text" class="form-control" id="registerName" placeholder="Introduce tu nombre completo">
+              <label for="registerName" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="registerName" placeholder="Introduce tu nombre" aria-label="Nombre para el registro">
             </div>
             <div class="mb-3">
               <label for="registerEmail" class="form-label">Correo Electrónico</label>
-              <input type="email" class="form-control" id="registerEmail" placeholder="Introduce tu correo">
+              <input type="email" class="form-control" id="registerEmail" placeholder="Introduce tu correo" aria-label="Correo electrónico para el registro">
             </div>
             <div class="mb-3">
               <label for="registerPassword" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="registerPassword" placeholder="Introduce una contraseña">
+              <input type="password" class="form-control" id="registerPassword" placeholder="Introduce tu contraseña" aria-label="Contraseña para el registro">
             </div>
-            <button type="submit" class="btn btn-primary w-100">Registrarse</button>
+            <button type="submit" class="btn btn-primary">Registrarse</button>
           </form>
         </div>
       </div>
     </div>
   </div>
 
-  <script src="boostra/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="boostra/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
