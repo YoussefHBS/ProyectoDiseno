@@ -1,0 +1,45 @@
+@media (max-width: 800px) {
+    body {
+      padding-top: 40%;
+    }
+  
+    div .col-md-4 {
+      margin: 6% auto;
+    }
+  
+    .navbar-collapse {
+      display: none;
+    }
+  
+    .navbar-collapse.show {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      margin: 0 auto;
+    }
+  
+    .nav {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      width: 100%;
+      padding: 10px auto;
+    }
+  
+    .nav li {
+      width: 100%;
+      text-align: center;
+      margin: 5px 0;
+    }
+  
+    #Ocultar {
+      display: none;
+    }
+  }
+  @media (min-width: 801px) {
+    .collapse.navbar-collapse ul li {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
