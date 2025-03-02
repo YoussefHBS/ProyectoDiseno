@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sport Fast</title>
+  <title>Sport Fast - Ropa Deportiva para Hombre</title>
   <link rel="stylesheet" href="boostra/dist/css/bootstrap.css">
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" role="navigation" aria-label="Menú de navegación principal">
     <div class="container">
-      <a class="navbar-brand mx-auto d-lg-none" href="index.html" alt="Logo de Sport Fast">
+      <a class="navbar-brand mx-auto d-lg-none" href="index.html">
         <img src="img/general/logo.svg" alt="Logo de Sport Fast" />
       </a>
   
@@ -56,33 +56,35 @@
           <li>Binding Master</li>
           <li>Boots</li>
         </ul>
-        <p class=" text-opacity-90 fs-4">544,90 €</p>
+        <p class="text-opacity-90 fs-4">544,90 €</p>
         <button class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#productModal" aria-label="Comprar Juego de Snowboard">Comprar</button>
       </div>
+  
       <div class="col-md-4 text-center">
         <img src="img/hombre/tenista.svg" alt="Conjunto de ropa para hombres, incluye camiseta con 4 colores, pantalón blanco y negro, gorra blanca" class="img-fluid mb-3" />
         <p class="fw-bold fs-5">Conjunto De Ropa Para Hombres</p>
         <ul class="list-unstyled fs-5">
           <li>Camiseta con 4 colores</li>
-          <li>Pantalón : Blanco y Negro</li>
+          <li>Pantalón: Blanco y Negro</li>
           <li>Gorra Blanca</li>
         </ul>
-        <p class=" text-opacity-90 fs-4">99,99 €</p>
+        <p class="text-opacity-90 fs-4">99,99 €</p>
         <button class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#productModal" aria-label="Comprar Conjunto de Ropa para Hombre">Comprar</button>
       </div>
+  
       <div class="col-md-4 text-center">
         <img src="img/hombre/rugby.svg" alt="Conjunto de ropa de fútbol americano, incluye pantalón blanco, camiseta azul, casco azul y blanco" class="img-fluid mb-3" />
-        <p class="fw-bold fs-5">Conjunto De Ropa De fútbol americano</p>
+        <p class="fw-bold fs-5">Conjunto De Ropa De Fútbol Americano</p>
         <ul class="list-unstyled fs-5">
           <li>Pantalón: color Blanco</li>
           <li>Camiseta: color azul</li>
           <li>Casco: color azul y blanco</li>
         </ul>
-        <p class=" text-opacity-90 fs-4">199,99 €</p>
+        <p class="text-opacity-90 fs-4">199,99 €</p>
         <button class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#productModal" aria-label="Comprar Conjunto de Fútbol Americano">Comprar</button>
       </div>
     </div>
-
+  
     <div class="row mt-5">
       <div class="col-md-4 text-center">
         <img src="img/hombre/esgrima.svg" alt="Juego de esgrima para hombres, incluye chaqueta de esgrima, pantalón y máscara" class="img-fluid mb-3" />
@@ -90,11 +92,12 @@
         <ul class="list-unstyled fs-5">
           <li>Chaqueta de esgrima</li>
           <li>Pantalón de esgrima</li>
-          <li>Mascara de esgrima</li>
+          <li>Máscara de esgrima</li>
         </ul>
-        <p class=" text-opacity-90 fs-4">244,90 €</p>
+        <p class="text-opacity-90 fs-4">244,90 €</p>
         <button class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#productModal" aria-label="Comprar Juego de Esgrima para Hombre">Comprar</button>
       </div>
+  
       <div class="col-md-4 text-center">
         <img src="img/hombre/cricket.svg" alt="Conjunto de ropa de cricket, incluye jersey blanco, guantes y pantalón blanco" class="img-fluid mb-3" />
         <p class="fw-bold fs-5">Conjunto de Ropa de Cricket</p>
@@ -103,10 +106,10 @@
           <li>Guantes</li>
           <li>Pantalón Largo: Color Blanco</li>
         </ul>
-        <p class=" text-opacity-90 fs-4">108,99 €</p>
+        <p class="text-opacity-90 fs-4">108,99 €</p>
         <button class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#productModal" aria-label="Comprar Conjunto de Cricket">Comprar</button>
       </div>
-
+  
       <div class="col-md-4 text-center">
         <img src="img/hombre/baloncesto.svg" alt="Conjunto de ropa de baloncesto, incluye camiseta blanca, guantes y pantalón blanco" class="img-fluid mb-3" />
         <p class="fw-bold fs-5">Conjunto de Ropa de Baloncesto</p>
@@ -115,86 +118,143 @@
           <li>Guantes</li>
           <li>Pantalón Largo: Color Blanco</li>
         </ul>
-        <p class=" text-opacity-90 fs-4">108,99 €</p>
+        <p class="text-opacity-90 fs-4">108,99 €</p>
         <button class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#productModal" aria-label="Comprar Conjunto de Baloncesto">Comprar</button>
       </div>
     </div>
   </main>
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-4" id="loginModalLabel">Iniciar Sesión</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="loginEmail" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" required>
+          </div>
+          <div class="mb-3">
+            <label for="loginPassword" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="loginPassword" required>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="rememberMe">
+            <label class="form-check-label" for="rememberMe">Recordar mi sesión</label>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
+        </form>
+        <div class="mt-3 text-center">
+          <p>¿No tienes una cuenta? <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal" aria-label="Registrarse en Sport Fast">Regístrate aquí</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-  <!-- Modal para detalles del producto -->
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-4" id="registerModalLabel">Registrarse</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="registerName" class="form-label">Nombre Completo</label>
+            <input type="text" class="form-control" id="registerName" required>
+          </div>
+          <div class="mb-3">
+            <label for="registerEmail" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="registerEmail" required>
+          </div>
+          <div class="mb-3">
+            <label for="registerPassword" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="registerPassword" required>
+          </div>
+          <div class="mb-3">
+            <label for="registerConfirmPassword" class="form-label">Confirmar Contraseña</label>
+            <input type="password" class="form-control" id="registerConfirmPassword" required>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Registrarse</button>
+        </form>
+        <div class="mt-3 text-center">
+          <p>¿Ya tienes una cuenta? <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal" aria-label="Iniciar sesión en Sport Fast">Inicia sesión aquí</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
   <div class="modal fade" id="productModal" aria-labelledby="productModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="productModalLabel">Detalles del Producto</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar el modal de producto"></button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar Modal"></button>
         </div>
         <div class="modal-body">
-          <h4>Nombre Producto: ......</h4>
-          <p class="fs-5 fw-bold">Descripción: ......</p>
-          <p class="fs-5 fw-bold">Precio: ....€</p>
+          <p>Información detallada sobre el producto...</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary">Confirmar Compra</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Cerrar Modal">Cerrar</button>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Modal de login -->
-  <div class="modal fade" id="loginModal" aria-labelledby="loginModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión en Sport Fast</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar el modal de inicio de sesión"></button>
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Contacto</h5>
+          <p><img src="img/general/email.svg" alt="Correo electrónico de Sport Fast"> sportfast@gmail.com</p>
+          <p><img src="img/general/telefono.svg" alt="Teléfono de Sport Fast"> 905 602 398</p>
         </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="loginEmail" class="form-label">Correo Electrónico</label>
-              <input type="email" class="form-control" id="loginEmail" placeholder="Introduce tu correo" aria-label="Correo electrónico de inicio de sesión">
-            </div>
-            <div class="mb-3">
-              <label for="loginPassword" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="loginPassword" placeholder="Introduce tu contraseña" aria-label="Contraseña de inicio de sesión">
-            </div>
-            <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
-          </form>
+        <div class="col-md-4">
+          <h5>Redes Sociales</h5>
+          <p><img src="img/general/instagram.svg" alt="Instagram de Sport Fast"> sportfastoficial</p>
+          <p><img src="img/general/twitter.svg" alt="Twitter de Sport Fast"> sportfastofficial</p>
+          <p><img src="img/general/facebook.svg" alt="Facebook de Sport Fast"> sportfast</p>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal de registro -->
-  <div class="modal fade" id="registerModal" aria-labelledby="registerModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="registerModalLabel">Registro en Sport Fast</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar el modal de registro"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="registerName" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="registerName" placeholder="Introduce tu nombre" aria-label="Nombre para el registro">
+        <div class="col-md-4">
+          <h5>Empresa</h5>
+          <a href="#" class="nav-link fs-6" data-bs-toggle="modal" data-bs-target="#locationModal">
+            <img src="img/general/ubicacion.svg" alt="Ubicación de Sport Fast"> Dirección de la empresa
+          </a>
+          <div class="modal fade" id="locationModal" aria-labelledby="locationModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header text-center">
+                  <h1 class="modal-title text-center text-dark" id="locationModalLabel">Ubicación de Sport Fast</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-center">
+                  <p class="fw-bold text-dark">Nuestra tienda se encuentra en:</p>
+                  <p class="fw-bold text-dark">C. Vinaroz, 14, 04007, Almería, España</p>
+                  <div class="ratio ratio-16x9">
+                    <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1276.5942679826465!2d-2.458773!3d36.827916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7a9dee6b383edf%3A0xdccd0b1c0b4eae94!2sZizou!5e0!3m2!1ses!2ses!4v1707742384015!5m2!1ses!2ses" 
+                    style="border:0;" allowfullscreen="" loading="lazy" title="Ubicación de Sport Fast en Google Maps">
+                    </iframe>
+                  </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
             </div>
-            <div class="mb-3">
-              <label for="registerEmail" class="form-label">Correo Electrónico</label>
-              <input type="email" class="form-control" id="registerEmail" placeholder="Introduce tu correo" aria-label="Correo electrónico para el registro">
-            </div>
-            <div class="mb-3">
-              <label for="registerPassword" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="registerPassword" placeholder="Introduce tu contraseña" aria-label="Contraseña para el registro">
-            </div>
-            <button type="submit" class="btn btn-primary">Registrarse</button>
-          </form>
+          </div>
+          
+        <p>© 2024 Sport Fast Inc, Todos los derechos reservados</p>
+        <img src="img/WCAG/wcag2.1AA-blue-v.png" alt="Certificación WCAG 2.1 AA" class="w-50">
         </div>
       </div>
     </div>
-  </div>
+  </footer>
 
   <script src="boostra/dist/js/bootstrap.bundle.js"></script>
 </body>

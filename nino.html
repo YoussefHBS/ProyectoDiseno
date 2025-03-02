@@ -3,41 +3,42 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sport Fast</title>
+  <title>Sport Fast - Ropa Deportiva para Hombre</title>
   <link rel="stylesheet" href="boostra/dist/css/bootstrap.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" role="navigation" aria-label="Menú de navegación principal">
     <div class="container">
       <a class="navbar-brand mx-auto d-lg-none" href="index.html">
-        <img src="img/general/logo.svg" alt="Logo">
+        <img src="img/general/logo.svg" alt="Logo de Sport Fast" />
       </a>
-      <button class="navbar-toggler btn btn-outline-primary mt-4 mb-4" onclick="toggleSidebar()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  
+      <button class="navbar-toggler btn btn-outline-primary mt-4 mb-4" onclick="toggleSidebar()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Abrir barra de navegación">
         <span class="navbar-toggler-icon"></span>
       </button>
   
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav" id="pepe">
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="nav">
-          <li class="btn btn-outline-primary fs-5 mx-2" >
-            <a href="mujer.html" class="nav-link fs-4">Mujer</a>
+          <li class="btn btn-outline-primary fs-5 mx-2">
+            <a href="mujer.html" class="nav-link fs-4" role="link" aria-label="Ir a ropa de mujer">Mujer</a>
           </li>
-          <li class="btn btn-outline-primary mx-2" >
-            <a href="Hombre.html" class="nav-link fs-4">Hombre</a>
+          <li class="btn btn-outline-primary mx-2">
+            <a href="Hombre.html" class="nav-link fs-4" role="link" aria-label="Ir a ropa de hombre">Hombre</a>
           </li>
-          <li class="btn btn-outline-primary mx-2" >
-            <a href="#" class="nav-link fs-4">Niño/a</a>
+          <li class="btn btn-outline-primary mx-2">
+            <a href="#" class="nav-link fs-4" role="link" aria-label="Ir a ropa para niño/a">Niño/a</a>
           </li>
-          <a id="Ocultar" href="index.html">
-            <img class="figure-img mx-5 mt-4" src="img/general/logo.svg" alt="Logo" class="logo" />
+          <a id="Ocultar" href="index.html" aria-label="Ir a la página principal">
+            <img class="figure-img mx-5 mt-4" src="img/general/logo.svg" alt="Logo de Sport Fast" class="logo" />
           </a>
-          <li class="btn btn-outline-primary mx-2" data-bs-toggle="modal" data-bs-target="#loginModal" >
-            <a href="#" class="nav-link fs-4">Iniciar Sesión</a>
+          <li class="btn btn-outline-primary mx-2" data-bs-toggle="modal" data-bs-target="#loginModal">
+            <a href="#" class="nav-link fs-4" role="link" aria-label="Iniciar sesión en Sport Fast">Iniciar Sesión</a>
           </li>
-          <li class="btn btn-outline-primary mx-2" data-bs-toggle="modal" data-bs-target="#registerModal" >
-            <a href="#" class="nav-link fs-4">Registrarse</a>
+          <li class="btn btn-outline-primary mx-2" data-bs-toggle="modal" data-bs-target="#registerModal">
+            <a href="#" class="nav-link fs-4" role="link" aria-label="Registrarse en Sport Fast">Registrarse</a>
           </li>
-          <li class="btn btn-outline-primary  mx-2" >
-            <a href="mas.html" class="nav-link fs-4">Más</a>
+          <li class="btn btn-outline-primary  mx-2">
+            <a href="mas.html" class="nav-link fs-4" role="link" aria-label="Ir a más productos">Más</a>
           </li>
         </ul>
       </div>
@@ -45,174 +46,182 @@
   </nav>
 
   <main class="container my-4">
-  <h1 class="text-center mb-5">Ropa Deportiva para Niños y Niñas</h1>
-    <div class="row">
-      <div class="col-md-4 text-center">
-        <img src="img/nino/nino1.svg" class="img-fluid mb-3" />
-        <p class="fw-bold fs-5">Juego de snowboard Para Niños/as</p>
-        <ul class="list-unstyled fs-5">
-          <li>Akasha Wide</li>
-          <li>Binding Master</li>
-          <li>Boots</li>
-        </ul>
-        <p class="text-opacity-90 fs-4">95,90 €</p>
-        <button class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#productModal">Comprar</button>
+    <h1 class="text-center mb-5">Ropa Deportiva para Niños y Niñas</h1>
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <img src="img/nino/nino1.svg" class="img-fluid mb-3" />
+          <p class="fw-bold fs-5">Juego de snowboard Para Niños/as</p>
+          <ul class="list-unstyled fs-5">
+            <li>Akasha Wide</li>
+            <li>Binding Master</li>
+            <li>Boots</li>
+          </ul>
+          <p class="text-opacity-90 fs-4">95,90 €</p>
+          <button class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#productModal">Comprar</button>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="img/nino/nino2.svg" class="img-fluid mb-3" />
+          <p class="fw-bold fs-5">Conjunto De Ropa Para Niñas</p>
+          <ul class="list-unstyled fs-5">
+            <li>Camiseta: Color Rosa</li>
+            <li>Pantalon Corto: Color Rosa</li>
+            <li>Gorra De Tenis: Color Rosa</li>
+          </ul>
+          <p class="text-opacity-90 fs-4">26,99 €</p>
+          <button class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#productModal">Comprar</button>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="img/nino/nino3.svg" class="img-fluid mb-3 " />
+          <p class="fw-bold fs-5">Conjunto de Ropa de Fútbol Para Niños/as</p>
+          <ul class="list-unstyled fs-5">
+            <li>Camiseta: Color Azul</li>
+            <li>Short: Color Negro</li>
+            <li>Medias: Color Azul</li>
+          </ul>
+          <p class="text-opacity-90 fs-4">12,99 €</p>
+          <button class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#productModal">Comprar</button>
+        </div>
       </div>
-      <div class="col-md-4 text-center">
-        <img src="img/nino/nino2.svg" class="img-fluid mb-3" />
-        <p class="fw-bold fs-5">Conjunto De Ropa Para Niñas</p>
-        <ul class="list-unstyled fs-5">
-          <li>Camiseta: Color Rosa</li>
-          <li>Pantalon Corto: Color Rosa</li>
-          <li>Gorra De Tenis: Color Rosa</li>
-        </ul>
-        <p class="text-opacity-90 fs-4">26,99 €</p>
-        <button class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#productModal">Comprar</button>
+  
+      <div class="row mt-5">
+        <div class="col-md-4 text-center">
+          <img src="img/nino/nino4.svg" class="img-fluid mb-4" />
+          <p class="fw-bold fs-5">Conjunto De Ropa Para Niña</p>
+          <ul class="list-unstyled fs-5">
+            <li>sujetador deportivo:</li>
+            <li>color gris</li>
+            <li>Mascara de esgrima</li>
+          </ul>
+          <p class="text-opacity-90 fs-4">7,99 €</p>
+          <button class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#productModal">Comprar</button>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="img/nino/nino5.svg" class="img-fluid mb-4" />
+          <p class="fw-bold fs-5">Conjunto de Ropa de Ciclismo </p>
+          <ul class="list-unstyled fs-5">
+            <li>Jersey de manga corta</li>
+            <li>Traje de bicicleta</li>
+            <li>Pantalón corto con pechera</li>
+          </ul>
+          <p class="text-opacity-90 fs-4">19,99 €</p>
+          <button class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#productModal">Comprar</button>
+        </div>
+  
+        <div class="col-md-4 text-center">
+          <img src="img/nino/nino6.svg" class="img-fluid mb-3" />
+          <p class="fw-bold fs-5">Conjunto De Ropa De Judo Para Niños/as</p>
+          <ul class="list-unstyled fs-5">
+            <li>Traje De Judo: Color Blanco </li>
+            <li>Cinturón: Color Naranja</li>
+            <li>Pantalón De Judo: Color Blanco</li>
+          </ul>
+          <p class="text-opacity-90 fs-4">49,99 €</p>
+          <button class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#productModal">Comprar</button>
+        </div>
       </div>
-      <div class="col-md-4 text-center">
-        <img src="img/nino/nino3.svg" class="img-fluid mb-3 " />
-        <p class="fw-bold fs-5">Conjunto de Ropa de Fútbol Para Niños/as</p>
-        <ul class="list-unstyled fs-5">
-          <li>Camiseta: Color Azul</li>
-          <li>Short: Color Negro</li>
-          <li>Medias: Color Azul</li>
-        </ul>
-        <p class="text-opacity-90 fs-4">12,99 €</p>
-        <button class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#productModal">Comprar</button>
+    </main>
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-4" id="loginModalLabel">Iniciar Sesión</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="loginEmail" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" required>
+          </div>
+          <div class="mb-3">
+            <label for="loginPassword" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="loginPassword" required>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="rememberMe">
+            <label class="form-check-label" for="rememberMe">Recordar mi sesión</label>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
+        </form>
+        <div class="mt-3 text-center">
+          <p>¿No tienes una cuenta? <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal" aria-label="Registrarse en Sport Fast">Regístrate aquí</a></p>
+        </div>
       </div>
     </div>
+  </div>
+</div>
 
-    <div class="row mt-5">
-      <div class="col-md-4 text-center">
-        <img src="img/nino/nino4.svg" class="img-fluid mb-4" />
-        <p class="fw-bold fs-5">Conjunto De Ropa Para Niña</p>
-        <ul class="list-unstyled fs-5">
-          <li>sujetador deportivo:</li>
-          <li>color gris</li>
-          <li>Mascara de esgrima</li>
-        </ul>
-        <p class="text-opacity-90 fs-4">7,99 €</p>
-        <button class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#productModal">Comprar</button>
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-4" id="registerModalLabel">Registrarse</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
       </div>
-      <div class="col-md-4 text-center">
-        <img src="img/nino/nino5.svg" class="img-fluid mb-4" />
-        <p class="fw-bold fs-5">Conjunto de Ropa de Ciclismo </p>
-        <ul class="list-unstyled fs-5">
-          <li>Jersey de manga corta</li>
-          <li>Traje de bicicleta</li>
-          <li>Pantalón corto con pechera</li>
-        </ul>
-        <p class="text-opacity-90 fs-4">19,99 €</p>
-        <button class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#productModal">Comprar</button>
-      </div>
-
-      <div class="col-md-4 text-center">
-        <img src="img/nino/nino6.svg" class="img-fluid mb-3" />
-        <p class="fw-bold fs-5">Conjunto De Ropa De Judo Para Niños/as</p>
-        <ul class="list-unstyled fs-5">
-          <li>Traje De Judo: Color Blanco </li>
-          <li>Cinturón: Color Naranja</li>
-          <li>Pantalón De Judo: Color Blanco</li>
-        </ul>
-        <p class="text-opacity-90 fs-4">49,99 €</p>
-        <button class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#productModal">Comprar</button>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="registerName" class="form-label">Nombre Completo</label>
+            <input type="text" class="form-control" id="registerName" required>
+          </div>
+          <div class="mb-3">
+            <label for="registerEmail" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="registerEmail" required>
+          </div>
+          <div class="mb-3">
+            <label for="registerPassword" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="registerPassword" required>
+          </div>
+          <div class="mb-3">
+            <label for="registerConfirmPassword" class="form-label">Confirmar Contraseña</label>
+            <input type="password" class="form-control" id="registerConfirmPassword" required>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Registrarse</button>
+        </form>
+        <div class="mt-3 text-center">
+          <p>¿Ya tienes una cuenta? <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal" aria-label="Iniciar sesión en Sport Fast">Inicia sesión aquí</a></p>
+        </div>
       </div>
     </div>
-  </main>
-
-  <div class="modal fade" id="productModal"  aria-labelledby="productModalLabel" aria-hidden="true">
+  </div>
+</div>
+ 
+  <div class="modal fade" id="productModal" aria-labelledby="productModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="productModalLabel">Detalles del Producto</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar Modal"></button>
         </div>
         <div class="modal-body">
-          <h4>Nombre Porducto: ......</h4>
-          <p class="fs-5 fw-bold">Descripcion: ......</p>
-          <p class="fs-5 fw-bold">Precio: ....€</p>
+          <p>Información detallada sobre el producto...</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary">Confirmar Compra</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Cerrar Modal">Cerrar</button>
         </div>
       </div>
     </div>
   </div>
-
-  <div class="modal fade" id="loginModal" aria-labelledby="loginModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión en Sport Fast</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="loginEmail" class="form-label">Correo Electrónico</label>
-              <input type="email" class="form-control" id="loginEmail" placeholder="Introduce tu correo">
-            </div>
-            <div class="mb-3">
-              <label for="loginPassword" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="loginPassword" placeholder="Introduce tu contraseña">
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="modal fade" id="registerModal" aria-labelledby="registerModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="registerModalLabel">Registrarse en Sport Fast</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="registerName" class="form-label">Nombre Completo</label>
-              <input type="text" class="form-control" id="registerName" placeholder="Introduce tu nombre completo">
-            </div>
-            <div class="mb-3">
-              <label for="registerEmail" class="form-label">Correo Electrónico</label>
-              <input type="email" class="form-control" id="registerEmail" placeholder="Introduce tu correo">
-            </div>
-            <div class="mb-3">
-              <label for="registerPassword" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="registerPassword" placeholder="Introduce una contraseña">
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Registrarse</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  
 
   <footer class="bg-dark text-white py-4">
     <div class="container">
       <div class="row">
         <div class="col-md-4">
           <h5>Contacto</h5>
-          <p><img src="img/general/email.svg" alt="gmail">portfast@gmail.com</p>
-          <p><img src="img/general/telefono.svg" > 905 602 398</p>
+          <p><img src="img/general/email.svg" alt="Correo electrónico de Sport Fast"> sportfast@gmail.com</p>
+          <p><img src="img/general/telefono.svg" alt="Teléfono de Sport Fast"> 905 602 398</p>
         </div>
         <div class="col-md-4">
           <h5>Redes Sociales</h5>
-          <p><img src="img/general/instagram.svg" alt="isntagram"> sportfastoficial</p>
-          <p><img src="img/general/twitter.svg"  alt="twitter">sportfastofficial</p>
-          <p><img src="img/general/facebook.svg" alt="facebook"> sportfast</p>
+          <p><img src="img/general/instagram.svg" alt="Instagram de Sport Fast"> sportfastoficial</p>
+          <p><img src="img/general/twitter.svg" alt="Twitter de Sport Fast"> sportfastofficial</p>
+          <p><img src="img/general/facebook.svg" alt="Facebook de Sport Fast"> sportfast</p>
         </div>
         <div class="col-md-4">
           <h5>Empresa</h5>
           <a href="#" class="nav-link fs-6" data-bs-toggle="modal" data-bs-target="#locationModal">
-            <img src="img/general/ubicacion.svg" alt="Ubicación mapa"> Dirección de la empresa
+            <img src="img/general/ubicacion.svg" alt="Ubicación de Sport Fast"> Dirección de la empresa
           </a>
           <div class="modal fade" id="locationModal" aria-labelledby="locationModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -227,7 +236,7 @@
                   <div class="ratio ratio-16x9">
                     <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1276.5942679826465!2d-2.458773!3d36.827916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7a9dee6b383edf%3A0xdccd0b1c0b4eae94!2sZizou!5e0!3m2!1ses!2ses!4v1707742384015!5m2!1ses!2ses" 
-                    style="border:0;" allowfullscreen="" loading="lazy">
+                    style="border:0;" allowfullscreen="" loading="lazy" title="Ubicación de Sport Fast en Google Maps">
                     </iframe>
                   </div>
                 </div>
@@ -239,10 +248,12 @@
           </div>
           
         <p>© 2024 Sport Fast Inc, Todos los derechos reservados</p>
+        <img src="img/WCAG/wcag2.1AA-blue-v.png" alt="Certificación WCAG 2.1 AA" class="w-50">
         </div>
       </div>
     </div>
   </footer>
+
   <script src="boostra/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
